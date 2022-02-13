@@ -1,8 +1,8 @@
 resource "aws_vpc" "myvpc" {
-  cidr_block = var.cidr_block
+  cidr_block = var.vpc_cidr_block
 
   tags = {
-    Name = "MYVPC"
-    Project = "Training"
+    Name = join("_", var.project, "VPC")
+    Project = var.project
   }
 }
