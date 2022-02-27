@@ -4,10 +4,10 @@ resource "aws_instance" "my_instance" {
   # ami           = data.aws_ami.ubuntu.id
   ami           = var.ami_id
 
-  instance_type = "t2.micro"
+  instance_type = var.instance_type
 
   tags = {
-    Name = join("_", var.project, "VPC")
+    Name = join("_", var.project, "EC2")
     Project = var.project
   }
 
