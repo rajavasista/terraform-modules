@@ -10,5 +10,5 @@ variable "subnet_cidr_block" {
 
 variable "project" {
   type = string
-  default = "MYPROJECT"
+  default = "MYPRO"
 }

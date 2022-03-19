@@ -6,7 +6,7 @@ variable "vpc_cidr_block" {
 
 variable "project" {
   type = string
-  default = "MYPROJECT"
+  default = "MYPRO"
 }
 
 # 10.0.0.0/25 = 128 IP's : VPC CIDR Block - (eu-west-2) - London - 3 AZ's (2a,2b,2c)
