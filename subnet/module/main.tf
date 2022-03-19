@@ -5,7 +5,8 @@ resource "aws_subnet" "my_pub_subnet" {
   cidr_block = var.subnet_cidr_block
 
   tags = {
-    Name = join("_", var.project, "PUB_SUBNET")
+    # Name = join("_", var.project, "PUB_SUBNET")
+    Name = "MYPUBSUBNET"
     Project = var.project
   }
 }
